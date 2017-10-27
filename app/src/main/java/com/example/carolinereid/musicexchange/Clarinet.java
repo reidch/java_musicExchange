@@ -25,4 +25,8 @@ public class Clarinet extends Instrument {
     public void reduceRetailPrice(int discount) {
         this.retailPrice -= discount;
     }
+
+    public void increaseRetailPrice(int increase) {
+        this.retailPrice += increase;
+    }
 }

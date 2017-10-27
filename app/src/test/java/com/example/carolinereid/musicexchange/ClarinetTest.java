@@ -56,4 +56,10 @@ public class ClarinetTest {
         clarinet.reduceRetailPrice(150);
         assertEquals(700, clarinet.getRetailPrice());
     }
+
+    @Test
+    public void canIncreaseRetailPrice() {
+        clarinet.increaseRetailPrice(50);
+        assertEquals(900, clarinet.getRetailPrice());
+    }
 }
