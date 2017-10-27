@@ -21,4 +21,8 @@ public class Clarinet extends Instrument {
     public String makeSound() {
         return "woody resonance";
     }
+
+    public void reduceRetailPrice(int discount) {
+        this.retailPrice -= discount;
+    }
 }

@@ -50,4 +50,10 @@ public class ClarinetTest {
     public void canMakeSound() {
         assertEquals("woody resonance", clarinet.makeSound());
     }
+
+    @Test
+    public void canReduceRetailPrice() {
+        clarinet.reduceRetailPrice(150);
+        assertEquals(700, clarinet.getRetailPrice());
+    }
 }
