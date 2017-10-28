@@ -35,7 +35,7 @@ public class DoubleBassTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(900, doubleBass.getCostPrice());
+        assertEquals(900, doubleBass.getCostPrice(), 0.1);
     }
 
     @Test

@@ -15,7 +15,7 @@ public class FluteMopTest {
 
     @Before
     public void before() {
-        fluteMop = new FluteMop("microfibre", 4, 6);
+        fluteMop = new FluteMop(4, 6, "microfibre");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class FluteMopTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(4, fluteMop.getCostPrice());
+        assertEquals(4, fluteMop.getCostPrice(), 0.1);
     }
 
     @Test

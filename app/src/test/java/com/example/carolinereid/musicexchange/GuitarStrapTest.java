@@ -15,7 +15,7 @@ public class GuitarStrapTest {
 
     @Before
     public void before() {
-        guitarStrap = new GuitarStrap("Planet Waves", 14, 22);
+        guitarStrap = new GuitarStrap( 14, 22, "Planet Waves");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class GuitarStrapTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(14, guitarStrap.getCostPrice());
+        assertEquals(14, guitarStrap.getCostPrice(), 0.1);
     }
 
     @Test

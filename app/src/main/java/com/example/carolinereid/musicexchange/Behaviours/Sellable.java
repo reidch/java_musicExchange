@@ -5,4 +5,6 @@ package com.example.carolinereid.musicexchange.Behaviours;
  */
 
 public interface Sellable {
+
+    double calculateMarkUp();
 }

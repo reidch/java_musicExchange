@@ -1,22 +1,17 @@
 package com.example.carolinereid.musicexchange;
 
-import com.example.carolinereid.musicexchange.Behaviours.Sellable;
-
 /**
- * Created by carolinereid on 27/10/2017.
+ * Created by carolinereid on 28/10/2017.
  */
 
-public class ClarinetReed implements Sellable {
+public class ClarinetReed extends Equipment {
     private int packSize;
     private String brand;
-    private int costPrice;
-    private double retailPrice;
 
-    public ClarinetReed(int packSize, String brand, int costPrice, double retailPrice) {
+    public ClarinetReed(double costPrice, double retailPrice, int packSize, String brand) {
+        super(costPrice, retailPrice);
         this.packSize = packSize;
         this.brand = brand;
-        this.costPrice = costPrice;
-        this.retailPrice = retailPrice;
     }
 
     public int getPackSize() {
@@ -25,13 +20,5 @@ public class ClarinetReed implements Sellable {
 
     public String getBrand() {
         return this.brand;
-    }
-
-    public int getCostPrice() {
-        return this.costPrice;
-    }
-
-    public double getRetailPrice() {
-        return this.retailPrice;
     }
 }

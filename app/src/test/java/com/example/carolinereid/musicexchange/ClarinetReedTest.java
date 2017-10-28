@@ -15,7 +15,7 @@ public class ClarinetReedTest {
 
     @Before
     public void before() {
-        clarinetReed = new ClarinetReed(3, "Vandoren", 5, 7);
+        clarinetReed = new ClarinetReed(5, 7, 3, "Vandoren");
     }
 
     @Test
@@ -30,7 +30,7 @@ public class ClarinetReedTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(5, clarinetReed.getCostPrice());
+        assertEquals(5, clarinetReed.getCostPrice(), 0.1);
     }
 
     @Test

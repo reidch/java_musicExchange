@@ -28,7 +28,7 @@ public class ViolinTest {
     public void hasType() { assertEquals("string", violin.getType()); }
 
     @Test
-    public void hasCostPrice() { assertEquals(450, violin.getCostPrice()); }
+    public void hasCostPrice() { assertEquals(450, violin.getCostPrice(), 0.1); }
 
     @Test
     public void hasRetailPrice() { assertEquals(600, violin.getRetailPrice(), 0.1); }

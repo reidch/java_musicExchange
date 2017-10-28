@@ -7,7 +7,7 @@ package com.example.carolinereid.musicexchange;
 public class Clarinet extends Instrument {
     private String mouthpiece;
 
-    public Clarinet(String material, String colour, String type, int costPrice, double retailPrice, String mouthpiece) {
+    public Clarinet(String material, String colour, String type, double costPrice, double retailPrice, String mouthpiece) {
         super(material, colour, type, costPrice, retailPrice);
         this.mouthpiece = mouthpiece;
     }

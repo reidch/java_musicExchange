@@ -15,7 +15,7 @@ public class DoubleBassRosinTest {
 
     @Before
     public void before() {
-        doubleBassRosin = new DoubleBassRosin("Nyman", 7, 10);
+        doubleBassRosin = new DoubleBassRosin(7, 10, "Nyman");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class DoubleBassRosinTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(7, doubleBassRosin.getCostPrice());
+        assertEquals(7, doubleBassRosin.getCostPrice(), 0.1);
     }
 
     @Test

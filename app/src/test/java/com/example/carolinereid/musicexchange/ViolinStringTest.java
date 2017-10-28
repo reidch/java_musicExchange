@@ -15,7 +15,7 @@ public class ViolinStringTest {
 
     @Before
     public void before() {
-        violinString = new ViolinString("D'Addario", "medium", 34, 45);
+        violinString = new ViolinString(34, 45, "D'Addario", "medium");
     }
 
     @Test
@@ -30,7 +30,7 @@ public class ViolinStringTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(34, violinString.getCostPrice());
+        assertEquals(34, violinString.getCostPrice(), 0.1);
     }
 
     @Test

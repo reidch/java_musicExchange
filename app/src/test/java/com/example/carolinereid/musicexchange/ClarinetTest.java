@@ -35,7 +35,7 @@ public class ClarinetTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(650, clarinet.getCostPrice());
+        assertEquals(650, clarinet.getCostPrice(), 0.1);
     }
 
     @Test
@@ -62,4 +62,5 @@ public class ClarinetTest {
         clarinet.increaseRetailPrice(50);
         assertEquals(900, clarinet.getRetailPrice(), 0.1);
     }
+
 }

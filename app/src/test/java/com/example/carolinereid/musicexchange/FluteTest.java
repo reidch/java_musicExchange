@@ -35,7 +35,7 @@ public class FluteTest {
 
     @Test
     public void hasCostPrice() {
-        assertEquals(350, flute.getCostPrice());
+        assertEquals(350, flute.getCostPrice(), 0.1);
     }
 
     @Test
@@ -49,5 +49,10 @@ public class FluteTest {
     @Test
     public void canMakeSound() {
         assertEquals("bright and breathy", flute.makeSound());
+    }
+
+    @Test
+    public void canCalculateMarkUp() {
+        assertEquals(100, flute.calculateMarkUp(), 0.1);
     }
 }
