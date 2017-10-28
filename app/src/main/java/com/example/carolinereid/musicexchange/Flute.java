@@ -10,7 +10,7 @@ import com.example.carolinereid.musicexchange.Behaviours.Sellable;
 public class Flute extends Instrument {
     private int toneHoles;
 
-    public Flute(String material, String colour, String type, int costPrice, int retailPrice, int toneHoles) {
+    public Flute(String material, String colour, String type, int costPrice, double retailPrice, int toneHoles) {
         super(material, colour, type, costPrice, retailPrice);
         this.toneHoles = toneHoles;
     }

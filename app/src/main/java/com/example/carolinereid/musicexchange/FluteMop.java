@@ -9,9 +9,9 @@ import com.example.carolinereid.musicexchange.Behaviours.Sellable;
 public class FluteMop implements Sellable {
     private String material;
     private int costPrice;
-    private int retailPrice;
+    private double retailPrice;
 
-    public FluteMop(String material, int costPrice, int retailPrice) {
+    public FluteMop(String material, int costPrice, double retailPrice) {
         this.material = material;
         this.costPrice = costPrice;
         this.retailPrice = retailPrice;
@@ -25,7 +25,7 @@ public class FluteMop implements Sellable {
         return this.costPrice;
     }
 
-    public int getRetailPrice() {
+    public double getRetailPrice() {
         return this.retailPrice;
     }
 }

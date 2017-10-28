@@ -29,5 +29,5 @@ public class GuitarStrapTest {
     }
 
     @Test
-    public void hasRetailPrice() { assertEquals(22, guitarStrap.getRetailPrice()); }
+    public void hasRetailPrice() { assertEquals(22, guitarStrap.getRetailPrice(), 0.1); }
 }

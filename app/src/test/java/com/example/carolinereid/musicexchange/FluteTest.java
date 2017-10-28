@@ -40,7 +40,7 @@ public class FluteTest {
 
     @Test
     public void hasRetailPrice() {
-        assertEquals(450, flute.getRetailPrice());
+        assertEquals(450, flute.getRetailPrice(), 0.1);
     }
 
     @Test

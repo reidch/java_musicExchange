@@ -29,5 +29,5 @@ public class FluteMopTest {
     }
 
     @Test
-    public void hasRetailPrice() { assertEquals(6, fluteMop.getRetailPrice()); }
+    public void hasRetailPrice() { assertEquals(6, fluteMop.getRetailPrice(), 0.1); }
 }

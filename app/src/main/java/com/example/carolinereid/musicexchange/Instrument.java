@@ -13,9 +13,9 @@ public abstract class Instrument implements Playable, Sellable {
     private String colour;
     private String type;
     private int costPrice;
-    protected int retailPrice;
+    protected double retailPrice;
 
-    public Instrument(String material, String colour, String type, int costPrice, int retailPrice) {
+    public Instrument(String material, String colour, String type, int costPrice, double retailPrice) {
         this.material = material;
         this.colour = colour;
         this.type = type;
@@ -37,7 +37,7 @@ public abstract class Instrument implements Playable, Sellable {
         return this.costPrice;
     }
 
-    public int getRetailPrice() {
+    public double getRetailPrice() {
         return this.retailPrice;
     }
 }

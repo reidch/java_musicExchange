@@ -10,9 +10,9 @@ public class ClarinetReed implements Sellable {
     private int packSize;
     private String brand;
     private int costPrice;
-    private int retailPrice;
+    private double retailPrice;
 
-    public ClarinetReed(int packSize, String brand, int costPrice, int retailPrice) {
+    public ClarinetReed(int packSize, String brand, int costPrice, double retailPrice) {
         this.packSize = packSize;
         this.brand = brand;
         this.costPrice = costPrice;
@@ -31,7 +31,7 @@ public class ClarinetReed implements Sellable {
         return this.costPrice;
     }
 
-    public int getRetailPrice() {
+    public double getRetailPrice() {
         return this.retailPrice;
     }
 }

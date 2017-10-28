@@ -9,9 +9,9 @@ import com.example.carolinereid.musicexchange.Behaviours.Sellable;
 public class DoubleBassRosin implements Sellable {
     private String brand;
     private int costPrice;
-    private int retailPrice;
+    private double retailPrice;
 
-    public DoubleBassRosin(String brand, int costPrice, int retailPrice) {
+    public DoubleBassRosin(String brand, int costPrice, double retailPrice) {
         this.brand = brand;
         this.costPrice = costPrice;
         this.retailPrice = retailPrice;
@@ -25,7 +25,7 @@ public class DoubleBassRosin implements Sellable {
         return this.costPrice;
     }
 
-    public int getRetailPrice() {
+    public double getRetailPrice() {
         return this.retailPrice;
     }
 }

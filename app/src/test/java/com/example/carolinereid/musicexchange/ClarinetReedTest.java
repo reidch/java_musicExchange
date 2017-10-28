@@ -35,6 +35,6 @@ public class ClarinetReedTest {
 
     @Test
     public void hasRetailPrice() {
-        assertEquals(7, clarinetReed.getRetailPrice());
+        assertEquals(7, clarinetReed.getRetailPrice(), 0.1);
     }
 }

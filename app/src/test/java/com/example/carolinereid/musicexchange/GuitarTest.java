@@ -40,7 +40,7 @@ public class GuitarTest {
 
     @Test
     public void hasRetailPrice() {
-        assertEquals(250, guitar.getRetailPrice());
+        assertEquals(250, guitar.getRetailPrice(), 0.1);
     }
 
     @Test

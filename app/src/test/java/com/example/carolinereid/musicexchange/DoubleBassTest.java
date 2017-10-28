@@ -40,10 +40,8 @@ public class DoubleBassTest {
 
     @Test
     public void hasRetailPrice() {
-        assertEquals(1150, doubleBass.getRetailPrice());
+        assertEquals(1150, doubleBass.getRetailPrice(), 0.1);
     }
-
-
 
     @Test
     public void canMakeSound() {

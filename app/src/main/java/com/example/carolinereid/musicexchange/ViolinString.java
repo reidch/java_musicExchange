@@ -10,9 +10,9 @@ public class ViolinString implements Sellable {
     private String brand;
     private String tension;
     private int costPrice;
-    private int retailPrice;
+    private double retailPrice;
 
-    public ViolinString(String brand, String tension, int costPrice, int retailPrice) {
+    public ViolinString(String brand, String tension, int costPrice, double retailPrice) {
         this.brand = brand;
         this.tension = tension;
         this.costPrice = costPrice;
@@ -31,7 +31,7 @@ public class ViolinString implements Sellable {
         return this.costPrice;
     }
 
-    public int getRetailPrice() {
+    public double getRetailPrice() {
         return this.retailPrice;
     }
 }

@@ -10,7 +10,7 @@ import com.example.carolinereid.musicexchange.Behaviours.Sellable;
 public class Violin extends Instrument {
     private int numStrings;
 
-    public Violin(String material, String colour, String type, int costPrice, int retailPrice, int numStrings) {
+    public Violin(String material, String colour, String type, int costPrice, double retailPrice, int numStrings) {
         super(material, colour, type, costPrice, retailPrice);
         this.numStrings = numStrings;
     }

@@ -35,6 +35,6 @@ public class ViolinStringTest {
 
     @Test
     public void hasRetailPrice() {
-        assertEquals(45, violinString.getRetailPrice());
+        assertEquals(45, violinString.getRetailPrice(), 0.1);
     }
 }

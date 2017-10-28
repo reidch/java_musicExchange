@@ -30,6 +30,6 @@ public class DoubleBassRosinTest {
 
     @Test
     public void hasRetailPrice() {
-        assertEquals(10, doubleBassRosin.getRetailPrice());
+        assertEquals(10, doubleBassRosin.getRetailPrice(), 0.1);
     }
 }
