@@ -1,4 +1,4 @@
-package com.example.carolinereid.musicexchange;
+package com.example.carolinereid.musicexchange.MusicalEquipment;
 
 /**
  * Created by carolinereid on 28/10/2017.

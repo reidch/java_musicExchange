@@ -1,5 +1,7 @@
 package com.example.carolinereid.musicexchange;
 
+import com.example.carolinereid.musicexchange.MusicalEquipment.FluteMop;
+
 import org.junit.Before;
 import org.junit.Test;
 

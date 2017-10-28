@@ -1,7 +1,4 @@
-package com.example.carolinereid.musicexchange;
-
-import com.example.carolinereid.musicexchange.Behaviours.Playable;
-import com.example.carolinereid.musicexchange.Behaviours.Sellable;
+package com.example.carolinereid.musicexchange.Instruments;
 
 /**
  * Created by carolinereid on 27/10/2017.
