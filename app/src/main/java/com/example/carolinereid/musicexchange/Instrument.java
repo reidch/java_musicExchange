@@ -46,4 +46,12 @@ public abstract class Instrument implements Playable, Sellable {
     public double calculateMarkUp() {
         return this.retailPrice -= this.costPrice;
     }
+
+    public void discountRetailPrice(double percentageDiscount) {
+        this.retailPrice *= percentageDiscount;
+    }
+
+    public void increaseRetailPrice(int increase) {
+        this.retailPrice += increase;
+    }
 }

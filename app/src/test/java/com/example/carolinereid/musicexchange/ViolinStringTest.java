@@ -37,4 +37,16 @@ public class ViolinStringTest {
     public void hasRetailPrice() {
         assertEquals(45, violinString.getRetailPrice(), 0.1);
     }
+
+    @Test
+    public void canReduceRetailPrice() {
+        violinString.discountRetailPrice(0.8);
+        assertEquals(36, violinString.getRetailPrice(), 0.1);
+    }
+
+    @Test
+    public void canIncreaseRetailPrice() {
+        violinString.increaseRetailPrice(3);
+        assertEquals(48, violinString.getRetailPrice(), 0.1);
+    }
 }

@@ -18,12 +18,4 @@ public class Clarinet extends Instrument {
     public String makeSound() {
         return "woody resonance";
     }
-
-    public void discountRetailPrice(double percentageDiscount) {
-        this.retailPrice *= percentageDiscount;
-    }
-
-    public void increaseRetailPrice(int increase) {
-        this.retailPrice += increase;
-    }
 }

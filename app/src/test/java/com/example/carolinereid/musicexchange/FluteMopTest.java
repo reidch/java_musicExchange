@@ -30,4 +30,9 @@ public class FluteMopTest {
 
     @Test
     public void hasRetailPrice() { assertEquals(6, fluteMop.getRetailPrice(), 0.1); }
+
+    @Test
+    public void canCalculateMarkUp() {
+        assertEquals(2, fluteMop.calculateMarkUp(), 0.1);
+    }
 }

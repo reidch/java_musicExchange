@@ -26,6 +26,14 @@ public abstract class Equipment implements Sellable {
     }
 
     public double calculateMarkUp() {
-        return (this.retailPrice -= this.costPrice);
+        return this.retailPrice -= this.costPrice;
+    }
+
+    public void discountRetailPrice(double percentageDiscount) {
+        this.retailPrice *= percentageDiscount;
+    }
+
+    public void increaseRetailPrice(int increase) {
+        this.retailPrice += increase;
     }
 }
