@@ -15,7 +15,7 @@ public abstract class Instrument implements Playable, Sellable {
     private String colour;
     private String type;
     private double costPrice;
-    protected double retailPrice;
+    private double retailPrice;
 
     public Instrument(String material, String colour, String type, double costPrice, double retailPrice) {
         this.material = material;

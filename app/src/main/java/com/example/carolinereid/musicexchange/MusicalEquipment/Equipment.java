@@ -9,7 +9,7 @@ import com.example.carolinereid.musicexchange.Behaviours.Sellable;
 public abstract class Equipment implements Sellable {
 
     private double costPrice;
-    protected double retailPrice;
+    private double retailPrice;
 
     public Equipment(double costPrice, double retailPrice) {
         this.costPrice = costPrice;
@@ -24,13 +24,9 @@ public abstract class Equipment implements Sellable {
         return this.retailPrice;
     }
 
-    public double calculateMarkUp() {
-        return this.retailPrice -= this.costPrice;
-    }
+    public double calculateMarkUp() { return this.retailPrice -= this.costPrice; }
 
-    public void discountRetailPrice(double percentageDiscount) {
-        this.retailPrice *= percentageDiscount;
-    }
+    public void discountRetailPrice(double percentageDiscount) { this.retailPrice *= percentageDiscount; }
 
     public void increaseRetailPrice(int increase) {
         this.retailPrice += increase;
