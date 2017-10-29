@@ -1,8 +1,6 @@
 package com.example.carolinereid.musicexchange;
 
 import com.example.carolinereid.musicexchange.Behaviours.Sellable;
-import com.example.carolinereid.musicexchange.Instruments.Instrument;
-import com.example.carolinereid.musicexchange.Instruments.Violin;
 
 import java.util.ArrayList;
 

@@ -39,12 +39,15 @@ public class ShopTest {
     @Test
     public void canAddStock() {
         shop.addStock(violin);
-        assertEquals(1, shop.stockCount());
+        shop.addStock(fluteMop);
+        assertEquals(2, shop.stockCount());
     }
 
     @Test
     public void canRemoveStock() {
+        shop.addStock(violin);
+        shop.addStock(fluteMop);
         shop.removeStock(violin);
-        assertEquals(0, shop.stockCount());
+        assertEquals(1, shop.stockCount());
     }
 }
